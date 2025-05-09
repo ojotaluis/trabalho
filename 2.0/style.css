@@ -1,0 +1,206 @@
+/* Seção Sobre Nós */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container para Centralização */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(90deg, #005b96, #0074cc);
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ffcc00;
+}
+
+/* Seção Hero */
+.hero {
+  background: #005b96;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background: #ffcc00;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+.hero .btn:hover {
+  background: #ff9900;
+}
+
+/* Seção Planos */
+.planos {
+  background-color: #f2f4f8;
+  padding: 60px 0;
+}
+
+.planos h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.planos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.plano {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.plano:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.plano h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.plano p {
+  font-size: 1.1em;
+}
+
+/* Seção Simulador */
+.simulador {
+  background: #ffffff;
+  padding: 60px 0;
+}
+
+.simulador h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+button[type="submit"] {
+  background: #005b96;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0074cc;
+}
+
+/* Resultados */
+.resultado {
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+  background-color: #005b96;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+  }
+
+  .planos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1.1em;
+  }
+
+  .planos h2, .simulador h2 {
+    font-size: 2em;
+  }
+}
