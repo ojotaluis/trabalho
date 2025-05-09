@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguros Vida+</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Seguros Vida+</h1>
+      <nav>
+        <a href="#planos">Planos</a>
+        <a href="#simulador">Simulador</a>
+        <a href="contato.html">Contato</a>
+        <a href="#sobre-nos">Sobre Nós</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="container">
+      <h2>Proteja o futuro de quem você ama</h2>
+      <p>Planos personalizados para cada fase da vida</p>
+      <a href="#simulador" class="btn">Simule seu plano</a>
+    </div>
+  </section>
+
+  <section id="planos" class="planos">
+    <div class="container">
+      <h2>Nossos Planos</h2>
+      <div class="planos-grid">
+        <div class="plano">
+          <h3>Essencial</h3>
+          <p>Proteção básica para imprevistos.</p>
+          <p>A partir de R$ 29,90/mês</p>
+        </div>
+        <div class="plano">
+          <h3>Completo</h3>
+          <p>Inclui cobertura para doenças graves e acidentes.</p>
+          <p>A partir de R$ 59,90/mês</p>
+        </div>
+        <div class="plano">
+          <h3>Premium</h3>
+          <p>Plano vitalício com benefícios em vida.</p>
+          <p>A partir de R$ 99,90/mês</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="simulador" class="simulador">
+    <div class="container">
+      <h2>Simulador de Seguro</h2>
+      <form id="formSimulador">
+        <div class="input-group">
+          <label for="idade">Idade:</label>
+          <input type="number" id="idade" name="idade" required placeholder="Digite sua idade">
+        </div>
+        <div class="input-group">
+          <label for="plano">Plano:</label>
+          <select id="plano" name="plano">
+            <option value="essencial">Essencial</option>
+            <option value="completo">Completo</option>
+            <option value="premium">Premium</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Simular</button>
+      </form>
+      <p id="resultado" class="resultado"></p>
+    </div>
+  </section>
+
+  <!-- Seção Sobre Nós -->
+  <section id="sobre-nos" class="sobre-nos">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <div class="grid">
+        <div class="card">
+          <i class="fas fa-bullseye"></i>
+          <h3>Missão</h3>
+          <p>Proteger vidas e oferecer soluções seguras, acessíveis e personalizadas, garantindo apoio em todos os momentos da vida dos nossos clientes.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-eye"></i>
+          <h3>Visão</h3>
+          <p>Ser referência nacional em cuidados e seguranças, reconhecida pela excelência no atendimento, inovação e compromisso com o bem-estar das famílias brasileiras.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-handshake"></i>
+          <h3>Valores</h3>
+          <ul>
+            <li>Comprometimento com a vida</li>
+            <li>Ética e transparência</li>
+            <li>Empatia e acolhimento</li>
+            <li>Inovação com responsabilidade</li>
+            <li>Excelência no atendimento</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Seguros Vida+. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
